@@ -1,7 +1,7 @@
 import requests
 from pathlib import Path
 
-SESSION_ID = ''
+SESSION_ID = '53616c7465645f5fac7bb61b1291073107009df8eb753863c9d1340ff2c8b5e01b095bb2269a1bab6c841375d630c437b611eda55311564573c99ee94aab8783'
 
 def get_input_for(day: int, year: int = 2024) -> list[str]:
     """Get input for a day
