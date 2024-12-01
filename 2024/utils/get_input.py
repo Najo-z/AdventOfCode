@@ -24,3 +24,4 @@ def get_input_for(day: int, year: int = 2024) -> list[str]:
     if res.status_code != 200:
         raise ValueError('Faield to get input.')
     path.write_text(res.text)
+    return res.text.splitlines()

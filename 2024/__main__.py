@@ -6,5 +6,5 @@ all_days = {
 }
 
 for day_nb, day_run in all_days.items():
-    get_input_for(day_nb)
-    day_run()
+    data = get_input_for(day_nb)
+    day_run(data)
