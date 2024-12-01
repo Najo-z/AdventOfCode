@@ -20,7 +20,7 @@ def get_input_for(day: int, year: int = 2024) -> list[str]:
     cookies = {
         'session': SESSION_ID
     }
-    res = requests.get(f'https://adventofcode.com/{year}/day/{day}', cookies=cookies)
+    res = requests.get(f'https://adventofcode.com/{year}/day/{day}/input', cookies=cookies)
     if res.status_code != 200:
         raise ValueError('Faield to get input.')
     path.write_text(res.text)
